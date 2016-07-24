@@ -1,0 +1,239 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 0.9px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background-image: url("./build/images/background.jpg");
+  background-position-y: -2950px; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h2 {
+  font-size: 22px; }
+
+h2.name {
+  text-transform: uppercase; }
+
+p {
+  line-height: 24px;
+  font-size: 16px;
+  text-align: justify; }
+
+p.right {
+  direction: rtl; }
+
+.job {
+  text-transform: uppercase;
+  font-style: italic; }
+
+.logocontainer {
+  width: 100%; }
+
+.logo {
+  display: block;
+  margin: auto;
+  padding-top: 80px; }
+
+section {
+  margin-top: 100px;
+  width: 100%; }
+
+section.left {
+  float: left;
+  position: relative;
+  left: -550px;
+  transition: left 300ms ease-in-out; }
+  @media screen and (max-width: 768px) {
+    section.left {
+      left: 0; } }
+
+section.left.show {
+  left: 0; }
+
+section.right {
+  float: right;
+  position: relative;
+  text-align: right;
+  right: -550px;
+  transition: right 300ms ease-in-out; }
+  @media screen and (max-width: 768px) {
+    section.right {
+      right: 0; } }
+
+section.right.show {
+  right: 0; }
+
+.box {
+  background-color: #222222;
+  padding: 30px;
+  width: 500px; }
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 100%; } }
+
+.box.right {
+  float: right; }
+
+.hozlineLeft {
+  width: 250px;
+  height: 1px;
+  border-bottom: 1px solid #fff; }
+
+.hozlineRight {
+  width: 250px;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+  float: right; }
+
+section.profile.left {
+  clear: both; }
+
+section.skills.left {
+  clear: both; }
+
+.footer {
+  clear: both;
+  height: 125px; }
+
+.bar {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  display: inline-block; }
+
+#dl {
+  text-align: center; }
+
+.back {
+  width: 80px;
+  cursor: pointer; }
+
+@media screen and (max-width: 768px) {
+  .left > p {
+    padding-right: 56px; }
+  .right > p {
+    padding-left: 56px; } }
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 16px;
+  position: absolute;
+  right: 238px; }
+
+.btn {
+  height: 8px;
+  width: 8px;
+  background-color: #222222;
+  position: absolute;
+  border-radius: 50%;
+  margin: 12px;
+  z-index: 999;
+  opacity: 0.8; }
+  @media screen and (max-width: 768px) {
+    .btn {
+      display: none; } }
+
+.btn:hover {
+  cursor: pointer; }
+
+.butLeft {
+  left: 569px;
+  top: -15px; }
+
+.butRight {
+  right: 569px;
+  top: -15px; }
+
+.glow {
+  border: 3px solid #fff;
+  -webkit-border-radius: 30px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  opacity: 0.0;
+  animation: pulsate 1s ease-out infinite; }
+  @media screen and (max-width: 768px) {
+    .glow {
+      display: none; } }
+
+.glowLeft {
+  left: 572px;
+  top: -12px; }
+
+.glowRight {
+  right: 572px;
+  top: -12px; }
+
+.glowLeft.animate {
+  animation: none; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0.0; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.0; } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+.arrow {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(./build/images/arrow.svg);
+  background-size: contain; }
+
+.bounce {
+  animation: bounce 2s infinite; }
