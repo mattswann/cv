@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-image: url("./build/images/background.jpg");
+  background-image: url("images/background.jpg");
   background-position-y: -2950px; }
 
 ol, ul {
@@ -232,7 +232,7 @@ section.skills.left {
   margin-left: -20px;
   width: 40px;
   height: 40px;
-  background-image: url(./build/images/arrow.svg);
+  background-image: url(images/arrow.svg);
   background-size: contain; }
 
 .bounce {
