@@ -29,8 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-image: url("images/background.jpg");
-  background-position: 0px -2950px; }
+  background-image: url(images/background.jpg); }
 
 ol, ul {
   list-style: none; }
