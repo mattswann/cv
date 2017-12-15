@@ -11375,14 +11375,14 @@ $('.btn').on('click', function () {
   // $(this).siblings('.butLeft').toggleClass('animate');
 });
 
-if (document.getElementById) { window.onload = swap };
-function swap() {
-    var numimages = 4;
-    randomimage = new Array ("build/styles/images/background.jpg", "build/styles/images/background1.jpg",  "build/styles/images/background2.jpg",  "build/styles/images/background3.jpg");
-    x = (Math.floor(Math.random()*numimages));
-    randomImg = (randomimage[x]);
-    document.body.style.backgroundImage = "url("+ randomImg +")";
-}
+// if (document.getElementById) { window.onload = swap };
+// function swap() {
+//     var numimages = 4;
+//     randomimage = new Array ("build/styles/images/background.jpg", "build/styles/images/background1.jpg",  "build/styles/images/background2.jpg",  "build/styles/images/background3.jpg");
+//     x = (Math.floor(Math.random()*numimages));
+//     randomImg = (randomimage[x]);
+//     document.body.style.backgroundImage = "url("+ randomImg +")";
+// }
 
 
 $(window).scroll(function() {
