@@ -11376,11 +11376,6 @@ $('.btn').on('click', function () {
 });
 
 
-let url = 'https://api.unsplash.com/photos/?client_id=342058acc80d5c9f31b3b18340cd3983407226043fe046aa8ab735b4bde80bd0';
-fetch(url).then(res => res.json()).then((out) =>{
-  console.log(out);
-}).catch(err => {throw err });
-
 
 
 if (document.getElementById) { window.onload = swap };
