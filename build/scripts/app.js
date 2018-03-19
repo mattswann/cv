@@ -11375,13 +11375,25 @@ $('.btn').on('click', function () {
   // $(this).siblings('.butLeft').toggleClass('animate');
 });
 
+
+let url = 'https://api.unsplash.com/photos/?client_id=342058acc80d5c9f31b3b18340cd3983407226043fe046aa8ab735b4bde80bd0';
+fetch(url).then(res => res.json()).then((out) =>{
+  console.log(out);
+}).catch(err => {throw err });
+
+
+
 if (document.getElementById) { window.onload = swap };
 function swap() {
-    var numimages = 4;
-    randomimage = new Array ("build/styles/images/background.jpg", "build/styles/images/background1.jpg",  "build/styles/images/background2.jpg",  "build/styles/images/background3.jpg");
+    var numimages = 10;
+    let url = 'https://api.unsplash.com/photos/?client_id=342058acc80d5c9f31b3b18340cd3983407226043fe046aa8ab735b4bde80bd0';
+    fetch(url).then(res => res.json()).then((out) =>{
+      console.log(out);
     x = (Math.floor(Math.random()*numimages));
-    randomImg = (randomimage[x]);
+    randomImg = out[x]['urls']['full'];
     document.body.style.backgroundImage = "url("+ randomImg +")";
+
+    }).catch(err => {throw err });
 }
 
 

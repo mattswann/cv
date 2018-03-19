@@ -30,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background-image: url(images/background.jpg);
-  background-position: 0px -2950px; }
+  background-position: top;
+  background-size: cover; }
 
 ol, ul {
   list-style: none; }
