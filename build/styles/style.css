@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-image: url("images/background.jpg");
-  background-position-y: -2950px; }
+  background-image: url(images/background.jpg);
+  background-position: 0px -2950px; }
 
 ol, ul {
   list-style: none; }
@@ -73,6 +73,13 @@ p.right {
   margin: auto;
   padding-top: 80px; }
 
+.guide {
+  text-align: center;
+  font-size: 10px; }
+  @media screen and (max-width: 768px) {
+    .guide {
+      display: none; } }
+
 section {
   margin-top: 100px;
   width: 100%; }
@@ -80,27 +87,29 @@ section {
 section.left {
   float: left;
   position: relative;
-  left: -550px;
+  left: 0px;
+  z-index: 2;
   transition: left 300ms ease-in-out; }
   @media screen and (max-width: 768px) {
     section.left {
       left: 0; } }
 
 section.left.show {
-  left: 0; }
+  left: -550px; }
 
 section.right {
   float: right;
   position: relative;
   text-align: right;
-  right: -550px;
+  right: 0px;
+  z-index: 2;
   transition: right 300ms ease-in-out; }
   @media screen and (max-width: 768px) {
     section.right {
       right: 0; } }
 
 section.right.show {
-  right: 0; }
+  right: -550px; }
 
 .box {
   background-color: #222222;
